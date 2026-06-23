@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:350px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    cursor:pointer;
+    background:#007bff;
+    color:white;
+    border:none;
+}
+
+p{
+    margin:5px 0;
+    font-size:14px;
+}
+
+#successMsg{
+    text-align:center;
+    font-weight:bold;
+}
+
+
+    </style>
+
+<div class="container">
+    <form id="registerForm">
+        <h2>Register</h2>
+
+        <input type="text" id="username" placeholder="Enter Username">
+        <p id="usernameMsg"></p>
+
+        <input type="email" id="email" placeholder="Enter Email">
+        <p id="emailMsg"></p>
+
+        <input type="password" id="password" placeholder="Enter Password">
+        <p id="passwordMsg"></p>
+
+        <button type="submit">Register</button>
+
+        <p id="successMsg"></p>
+    </form>
+</div>
+
+<script src="./patern.js"></script>
+
+</body>
+</html>
